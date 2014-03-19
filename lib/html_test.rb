@@ -5,11 +5,11 @@ if !defined?(RAILS_ENV) || RAILS_ENV == 'test' || Rails.env == 'test'
 		require File.join(File.dirname(__FILE__), file)
 	end
 	
-	class Test::Unit::TestCase
+	class  MiniTest::Unit::TestCase	#	Test::Unit::TestCase
 		include Html::Test::Assertions
 	end
 	
-	module ActionController
+	module ActionDispatch
 		module Integration #:nodoc:
 			class Session
 				include Html::Test::Assertions			

@@ -7,16 +7,19 @@ source 'https://rubygems.org'
 #
 group :test do
 
-	gem 'rails', '~> 3.2'
+	gem 'rails', '~> 4.0'	#'~> 3.2'
 
 	gem "jeweler"
+	gem "test-unit"
 
 	gem "simplecov", :require => false
 
-	gem "mocha", '0.13.3', :require => false #	0.14.0 seems to require unstubbing
+#	gem "mocha", '0.13.3', :require => false #	0.14.0 seems to require unstubbing
+	gem "mocha", :require => false #	0.14.0 seems to require unstubbing
 
 	gem "autotest-rails", :require => 'autotest/rails'
 
-	gem 'ZenTest', '=4.9.1'
+#	gem 'ZenTest', '=4.9.1'
+	gem 'ZenTest'	#, '=4.9.1'
 
 end

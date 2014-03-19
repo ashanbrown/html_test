@@ -2,3 +2,4 @@ pkg/
 versions/
 log/
 /coverage*/
+/config/secrets.yml

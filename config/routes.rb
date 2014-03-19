@@ -3,7 +3,7 @@ HtmlTest::Application.routes.draw do
 
 	#	This file isn't included in the gem,
 	#	but routes are needed for testing the controllers.
-	match ':controller(/:action(/:id))(.:format)'
+	get ':controller(/:action(/:id))(.:format)'
 
 
 

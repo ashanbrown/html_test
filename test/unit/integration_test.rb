@@ -4,7 +4,7 @@ ApplicationController.validate_all = false
 #ApplicationController.check_urls = true	#	Sorry, won't work in rails 3, yet
 ApplicationController.check_redirects = true
 
-class Html::Test::IntegrationTest < ActionController::IntegrationTest
+class Html::Test::IntegrationTest < ActionDispatch::IntegrationTest
 	def test_assert_validates_invokes_all
 		get('/test/valid')
 		assert_response :success
