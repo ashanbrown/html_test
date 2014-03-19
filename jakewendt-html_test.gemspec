@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "jakewendt-html_test"
-  s.version = "0.3.5"
+  s.version = "4.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Peter Marklund", "George 'Jake' Wendt"]
-  s.date = "2013-12-04"
+  s.date = "2014-03-19"
   s.description = "Ruby on Rails plugin for HTML validation and link checking"
   s.email = "github@jakewendt.com"
   s.extra_rdoc_files = [
@@ -35,9 +35,7 @@ Gem::Specification.new do |s|
     "lib/url_checker.rb",
     "lib/url_selector.rb",
     "lib/validate_filter.rb",
-    "lib/validator.rb",
-    "script/rails",
-    "script/validate"
+    "lib/validator.rb"
   ]
   s.homepage = "http://github.com/jakewendt/html_test"
   s.require_paths = ["lib"]

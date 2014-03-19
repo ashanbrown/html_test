@@ -50,7 +50,8 @@ begin
 		gem.files -= FileList['pkg/**/*']
 		gem.files -= FileList['**/versions/**/*']
 		gem.files -= FileList['*Gemfile*']
-		gem.files -= FileList['rails/init.rb*']
+		gem.files -= FileList['rails/*']
+		gem.files -= FileList['script/*']
 		gem.files -= FileList['coverage/**/*']
 	end
 	Jeweler::GemcutterTasks.new

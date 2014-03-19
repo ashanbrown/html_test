@@ -10,7 +10,7 @@ group :test do
 	gem 'rails', '~> 4.0'	#'~> 3.2'
 
 	gem "jeweler"
-	gem "test-unit"
+#	gem "test-unit"
 
 	gem "simplecov", :require => false
 
