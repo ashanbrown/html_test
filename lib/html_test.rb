@@ -4,7 +4,7 @@ if !defined?(RAILS_ENV) || RAILS_ENV == 'test' || Rails.env == 'test'
 		require File.join(File.dirname(__FILE__), file)
 	end
 	
-	class	MiniTest::Unit::TestCase	#	Test::Unit::TestCase
+	class	MiniTest::Unit::TestCase
 		include Html::Test::Assertions
 	end if defined?(MiniTest)
 	
