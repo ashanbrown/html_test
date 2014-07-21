@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class Html::Test::ControllerTest < ActionController::TestCase
+
+	include ::Html::Test::Assertions	#	20140721 - apparently needed now?
+
 	def setup
 		@controller = TestController.new
 #		@request		= ActionController::TestRequest.new

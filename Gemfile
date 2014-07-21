@@ -7,10 +7,23 @@ source 'https://rubygems.org'
 #
 group :test do
 
+
+#	minitest-5.3.4/lib/minitest.rb
+#	still true in 5.4.0.  May need to just redefine the offending method.
+#	test classes are purposely shuffled!  Only change in this version!  Why?
+#	Random is stupid.  Unpredictable.  Poor testing strategy.
+#	144: suites = Runnable.runnables.shuffle
+#	remove this requirement if can find a way around
+gem 'minitest', '= 5.3.3'
+
+
+
+
 	gem 'rails', '~> 4.0'	#'~> 3.2'
 
 	gem "jeweler"
-#	gem "test-unit"
+
+	gem "test-unit"
 
 	gem "simplecov", :require => false
 

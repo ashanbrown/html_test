@@ -5,6 +5,9 @@ ApplicationController.validate_all = false
 ApplicationController.check_redirects = true
 
 class Html::Test::IntegrationTest < ActionDispatch::IntegrationTest
+
+	include ::Html::Test::Assertions	#	20140721 - apparently needed now?
+
 	def test_assert_validates_invokes_all
 		get('/test/valid')
 		assert_response :success
